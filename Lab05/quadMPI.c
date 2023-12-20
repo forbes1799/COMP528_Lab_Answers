@@ -58,11 +58,6 @@ void integrationPTP(int commSize, int myRank){
 	MPI_Barrier(MPI_COMM_WORLD);
 }
 
-void integrationCC(int commSize, int myRank){
-	/*Perform the same function as integrationPTP
-	But use MPI_Reduce instead of point to point communications*/
-}
-
 double independentRankWork(int commSize, int myRank){
 	/*Set up the number of quads*/
 	const double a=0.0, b=200.0;
