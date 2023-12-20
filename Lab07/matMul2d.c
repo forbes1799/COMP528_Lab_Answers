@@ -80,7 +80,6 @@ int main(int argc, char *argv[])
     for (i=from; i<to; i++){ 
         for (j=0; j<MAXSIZE; j++) {
             for (k=0; k<MAXSIZE; k++){
-                #pragma omp atomic
                 localZ[i - from][j] += localX[i - from][k]*Y[k][j];
             }
         }
