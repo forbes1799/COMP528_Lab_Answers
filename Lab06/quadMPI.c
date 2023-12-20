@@ -38,7 +38,7 @@ int main(void){
 		tEnd = MPI_Wtime();
 
 		if(myRank == 0){
-			printf("Time taken for CC = %f\n", 1000.0*(tEnd - tStart));
+			printf("Time taken for CC = %f milliseconds\n", 1000.0*(tEnd - tStart));
 			printf("----------------\n");
 		}
 		
